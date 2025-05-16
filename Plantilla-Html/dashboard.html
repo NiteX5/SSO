@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Plataforma de Acreditación</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="min-h-screen bg-white">
+    <div class="relative flex min-h-screen flex-col">
+        <!-- Barra de navegación -->
+        <div class="flex justify-between items-center px-4 py-2 border-b">
+            <header class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+                <div class="container mx-auto flex h-14 items-center">
+                    <div class="mr-4 hidden md:flex">
+                        <a href="#" class="mr-6 flex items-center space-x-2">
+                            <i class="fa-solid fa-hard-hat h-6 w-6"></i>
+                            <span class="font-bold">Vista Empresa Minera</span>
+                        </a>
+                        <nav class="flex items-center space-x-6 text-sm font-medium">
+                            <a href="dashboard.html" class="transition-colors hover:text-foreground/80 text-foreground flex items-center gap-2 font-bold">
+                                <i class="fa-solid fa-chart-line h-4 w-4"></i>
+                                Dashboard
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        </div>
+        
+        <!-- Contenido principal -->
+        <main class="container mx-auto px-4 py-6">
+            <h1 class="text-2xl font-bold mb-6">Plataforma SSO</h1>
+
+            <!-- Top Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                <div class="p-4 rounded-lg border bg-card text-card-foreground shadow-sm">
+                    <h3 class="text-gray-600 text-sm">Total Horas Sin Accidentes</h3>
+                    <p class="text-3xl font-bold mt-2">1,001,549 horas</p>
+                </div>
+
+                <div class="p-4 rounded-lg border bg-card text-card-foreground shadow-sm">
+                    <h3 class="text-gray-600 text-sm">Accidentes Laborales</h3>
+                    <p class="text-3xl font-bold mt-2">0</p>
+                </div>
+
+                <div class="p-4 rounded-lg border bg-card text-card-foreground shadow-sm">
+                    <h3 class="text-gray-600 text-sm">Accidentes Fatales</h3>
+                    <p class="text-3xl font-bold mt-2">0</p>
+                </div>
+            </div>
+
+            <!-- Training and Vehicles -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                <!-- Training Card -->
+                <div class="p-6 rounded-lg border bg-card text-card-foreground shadow-sm">
+                    <h2 class="text-xl font-medium mb-6">Capacitación</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="flex flex-col items-center">
+                            <div class="relative h-32 w-32">
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <span class="text-2xl font-bold">75%</span>
+                                </div>
+                                <svg class="h-32 w-32" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="40" fill="none" stroke="#e6e6e6" stroke-width="10" />
+                                    <circle
+                                        cx="50"
+                                        cy="50"
+                                        r="40"
+                                        fill="none"
+                                        stroke="#22c55e"
+                                        stroke-width="10"
+                                        stroke-dasharray="251.2"
+                                        stroke-dashoffset="62.8"
+                                        stroke-linecap="round"
+                                        transform="rotate(-90 50 50)"
+                                    />
+                                </svg>
+                            </div>
+                            <span class="mt-2 text-gray-600">Eficiencia</span>
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                            <div class="relative h-32 w-32">
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <span class="text-2xl font-bold">60%</span>
+                                </div>
+                                <svg class="h-32 w-32" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="40" fill="none" stroke="#e6e6e6" stroke-width="10" />
+                                    <circle
+                                        cx="50"
+                                        cy="50"
+                                        r="40"
+                                        fill="none"
+                                        stroke="#3b82f6"
+                                        stroke-width="10"
+                                        stroke-dasharray="251.2"
+                                        stroke-dashoffset="100.48"
+                                        stroke-linecap="round"
+                                        transform="rotate(-90 50 50)"
+                                    />
+                                </svg>
+                            </div>
+                            <span class="mt-2 text-gray-600">Cumplimiento</span>
+                        </div>
+
+                        <div class="flex flex-col items-center">
+                            <div class="relative h-32 w-32">
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <span class="text-2xl font-bold">70%</span>
+                                </div>
+                                <svg class="h-32 w-32" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="40" fill="none" stroke="#e6e6e6" stroke-width="10" />
+                                    <circle
+                                        cx="50"
+                                        cy="50"
+                                        r="40"
+                                        fill="none"
+                                        stroke="#eab308"
+                                        stroke-width="10"
+                                        stroke-dasharray="251.2"
+                                        stroke-dashoffset="75.36"
+                                        stroke-linecap="round"
+                                        transform="rotate(-90 50 50)"
+                                    />
+                                </svg>
+                            </div>
+                            <span class="mt-2 text-gray-600">Cobertura</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vehicles Card -->
+                <div class="p-6 rounded-lg border bg-card text-card-foreground shadow-sm">
+                    <h2 class="text-xl font-medium mb-6">Vehículos</h2>
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead>
+                                <tr class="text-left">
+                                    <th class="pb-2 font-normal text-gray-500">Tipo</th>
+                                    <th class="pb-2 font-normal text-gray-500">Camiones</th>
+                                    <th class="pb-2 font-normal text-gray-500">Buses</th>
+                                    <th class="pb-2 font-normal text-gray-500">Minibuses</th>
+                                    <th class="pb-2 font-normal text-gray-500">Operación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="py-2">Total</td>
+                                    <td class="py-2">825</td>
+                                    <td class="py-2">42</td>
+                                    <td class="py-2">157</td>
+                                    <td class="py-2">378</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2">Eléctricos</td>
+                                    <td class="py-2">220</td>
+                                    <td class="py-2">12</td>
+                                    <td class="py-2">30</td>
+                                    <td class="py-2">78</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2">Combustión</td>
+                                    <td class="py-2">605</td>
+                                    <td class="py-2">30</td>
+                                    <td class="py-2">90</td>
+                                    <td class="py-2">200</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Staff -->
+            <div class="p-6 mb-6 rounded-lg border bg-card text-card-foreground shadow-sm">
+                <h2 class="text-xl font-medium mb-2">Total Personal</h2>
+                <p class="text-4xl font-bold">4,917</p>
+            </div>
+
+            <!-- Work Disability -->
+            <div class="p-6 mb-6 rounded-lg border bg-card text-card-foreground shadow-sm">
+                <h2 class="text-xl font-medium mb-6">Incapacidad Laboral</h2>
+                <div class="space-y-4" id="disabilityChart">
+                    <!-- Los datos se cargarán dinámicamente con JavaScript -->
+                </div>
+            </div>
+
+            <!-- Occupational Illness -->
+            <div class="p-6 mb-6 rounded-lg border bg-card text-card-foreground shadow-sm">
+                <h2 class="text-xl font-medium mb-2">Enfermedad Ocupacional</h2>
+                <div class="flex items-center space-x-4 mb-4">
+                    <div class="flex items-center">
+                        <span class="h-3 w-3 rounded-full bg-orange-500 mr-2"></span>
+                        <span>Incidencia</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="h-3 w-3 rounded-full bg-green-500 mr-2"></span>
+                        <span>Prevalencia</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="flex items-center space-x-2">
+                        <span>L.</span>
+                        <div class="bg-blue-50 px-3 py-1 rounded">1</div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span>P.</span>
+                        <div class="bg-blue-50 px-3 py-1 rounded">1</div>
+                    </div>
+                </div>
+
+                <div class="h-64 relative">
+                    <div class="absolute top-0 left-12 text-xs text-gray-500">5000</div>
+                    <div class="absolute bottom-0 left-12 text-xs text-gray-500">0</div>
+                    <div class="absolute top-0 right-0 text-xs text-gray-500">4545</div>
+
+                    <div class="h-full flex items-end pl-16">
+                        <div class="flex-1 h-full flex items-end">
+                            <!-- Horizontal axis line -->
+                            <div class="absolute bottom-8 left-16 right-0 h-px bg-gray-300"></div>
+
+                            <!-- Vertical green line for December -->
+                            <div class="relative h-full flex items-end justify-around w-full">
+                                <div class="flex flex-col items-center">
+                                    <div class="absolute bottom-8 w-1 bg-green-500 h-[80%]"></div>
+                                    <span class="text-xs text-gray-500 mt-2">Dic</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <span class="text-xs text-gray-500 mt-2">Ene</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <span class="text-xs text-gray-500 mt-2">Feb</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <span class="text-xs text-gray-500 mt-2">Mar</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <span class="text-xs text-gray-500 mt-2">Abr</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <span class="text-xs text-gray-500 mt-2">May</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <span class="text-xs text-gray-500 mt-2">Jun</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <span class="text-xs text-gray-500 mt-2">Jul</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <span class="text-xs text-gray-500 mt-2">Ago</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <span class="text-xs text-gray-500 mt-2">Sep</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <span class="text-xs text-gray-500 mt-2">Oct</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <span class="text-xs text-gray-500 mt-2">Nov</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accident Probability Ranking -->
+            <div class="p-6 relative rounded-lg border bg-card text-card-foreground shadow-sm">
+                <div class="absolute top-4 right-4">
+                    <button id="refreshAccidentData" class="text-gray-500 hover:text-gray-700">
+                        <i class="fa-solid fa-arrows-rotate h-4 w-4"></i>
+                    </button>
+                </div>
+                <h2 class="text-xl font-medium mb-6">Ranking de Probabilidad de Accidentes</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="text-left border-b">
+                                <th class="pb-2 font-normal text-gray-500">Ranking</th>
+                                <th class="pb-2 font-normal text-gray-500">Área</th>
+                                <th class="pb-2 font-normal text-gray-500">Cantidad de Personas</th>
+                                <th class="pb-2 font-normal text-gray-500">Probabilidad de Accidente</th>
+                            </tr>
+                        </thead>
+                        <tbody id="accidentProbabilityTableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
